@@ -1,0 +1,74 @@
+<% provide(:title, "Contact") %>
+<style>
+    section {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 5rem;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    div {
+        display: grid;
+        margin: 1rem auto;
+    }
+
+    label {
+        margin-bottom: 0.5rem;
+    }
+
+    input {
+        border: solid 0.5px cornflowerblue;
+        border-radius: 4px;
+        width: 20rem;
+        padding: 0.5rem;
+    }
+
+    input:focus {
+        outline: 0;
+        border: solid 0.5px seagreen;
+    }
+
+    form {
+        border: solid 2px cornflowerblue;
+        border-radius: 0.5rem;
+        padding: 2rem 2rem;
+        height: 250px;
+    }
+
+    button {
+        padding: 0.2rem 1rem;
+        background-color: cornflowerblue;
+        color: white;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        border-color: transparent;
+    }
+
+    button:active {
+        background-color: white;
+        color: cornflowerblue;
+        border: solid 2px cornflowerblue;
+    }
+
+    button:focus {
+        outline: 0;
+    }
+</style>
+<section>
+    <form>
+        <h1>Contact</h1>
+        <div>
+            <label for="name">名前：</label>
+            <input id="name" type="text" placeholder="名前を入力してください" />
+        </div>
+        <div>
+            <label for="content">内容：</label>
+            <input id="content" type="text" placeholder="内容を入力してください" />
+        </div>
+        <button type="button">送信</button>
+    </form>
+</section>
