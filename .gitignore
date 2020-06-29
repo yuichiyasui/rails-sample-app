@@ -21,3 +21,6 @@
 /yarn-error.log
 
 .byebug_history
+
+# 自動テスト実施時のGitとの競合を防ぐ
+/spring/*.pid
